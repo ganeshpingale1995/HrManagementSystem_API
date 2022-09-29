@@ -73,7 +73,7 @@ namespace HrManagementSystem.Controllers
                     emp.Gender = employee.Gender;
                     emp.Role = employee.Role;
                     emp.IsActive = employee.IsActive;
-                    await hrms_DbContext.SaveChangesAsync(); ;
+                    await hrms_DbContext.SaveChangesAsync();
                     return Ok(emp);
                 }
                 return NotFound("employee not found");
